@@ -26,6 +26,9 @@ class CountryListVC: UIViewController {
 
         title = "Select a Country"
         countryListTableView.sectionIndexBackgroundColor = UIColor.clear
+        
+        let cancelButton = UIBarButtonItem.init(title: "Cancel", style: .done, target: self, action: #selector(cancelAction))
+        navigationController?.navigationItem.leftBarButtonItem = cancelButton
 
         if let fileUrl = Bundle.main.url(forResource: "CountryList", withExtension: "plist"),
             let data = try? Data(contentsOf: fileUrl) {
@@ -54,6 +57,10 @@ class CountryListVC: UIViewController {
                 sectionsTitles = dict.keys.sorted().flatMap { $0 }
             }
         }
+    }
+    
+    func cancelAction() {
+        dismiss(animated: true, completion: nil)
     }
 }
 
@@ -110,7 +117,7 @@ extension CountryListVC : UITableViewDataSource, UITableViewDelegate {
                 country = (rows?[indexPath.row])!
             }
             didSelectCountry!(country)
-            _ = navigationController?.popViewController(animated: true)
+            dismiss(animated: true, completion: nil)
         }
     }
 }

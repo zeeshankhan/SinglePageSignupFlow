@@ -51,7 +51,7 @@ class EntryViewController: UIViewController {
         lblTitle.text = viewType.title
         lblSubTitle.text = viewType.subtitle
 
-        separator.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
+        separator.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         lblWarning.text = ""
 
         if case .phone(let imgC, let code, _) = viewType {
@@ -83,7 +83,7 @@ class EntryViewController: UIViewController {
             lblWarning.text = viewType.warningMessage()
         }
         else {
-            separator.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
+            separator.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             lblWarning.text = ""
         }
     }
@@ -100,8 +100,8 @@ class EntryViewController: UIViewController {
             self?.imgCountry.image = UIImage(named: code[kCountryFlag]!)
             self?.lblCode.text = "+" + code[kPhoneCode]!
         }
-        
-        navigationController?.pushViewController(vc, animated: true)
+        let navCont = UINavigationController(rootViewController: vc)
+        present(navCont, animated: true, completion: nil)
     }
 
 }
@@ -134,7 +134,7 @@ extension EntryViewController : UITextFieldDelegate {
 
     //MARK: UITextField delegates
     func textFieldDidEndEditing(_ textField: UITextField) {
-        separator.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9019607843, blue: 0.9019607843, alpha: 1)
+        separator.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         if let callback = didEndEditing {
             viewType = viewType.new(textField.text!)
             callback(viewType)
@@ -142,7 +142,7 @@ extension EntryViewController : UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        return textField.resignFirstResponder()
+        return false //textField.resignFirstResponder()
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {

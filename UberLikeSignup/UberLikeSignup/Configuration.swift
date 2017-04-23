@@ -121,7 +121,7 @@ enum ViewType {
         case .name: return "Enter your full name"
         case .email: return "Enter your email address"
         case .password: return "Create password"
-        case .phone: return "Enter your phone number"
+        case .phone: return "Enter your mobile number"
         case .invitationCode: return ""
         case .verify: return "Verify Account"
         }
