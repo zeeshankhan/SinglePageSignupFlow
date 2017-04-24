@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B34B35F61EAD975C0012E404 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B35F51EAD975C0012E404 /* UserDataModel.swift */; };
 		B372CFB81EAC91A900E91FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFB71EAC91A900E91FA9 /* AppDelegate.swift */; };
 		B372CFBA1EAC91A900E91FA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFB91EAC91A900E91FA9 /* ViewController.swift */; };
 		B372CFBD1EAC91A900E91FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B372CFBB1EAC91A900E91FA9 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B34B35F51EAD975C0012E404 /* UserDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		B372CFB41EAC91A900E91FA9 /* UberLikeSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberLikeSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372CFB71EAC91A900E91FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B372CFB91EAC91A900E91FA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				B372CFD01EAC91F800E91FA9 /* PasswordViewController.swift */,
 				B372CFD41EAC91F800E91FA9 /* VerifyPhoneViewController.swift */,
 				B372CFCA1EAC91F800E91FA9 /* CountryListVC.swift */,
+				B34B35F51EAD975C0012E404 /* UserDataModel.swift */,
 				B372CFD21EAC91F800E91FA9 /* Configuration.swift */,
 				B372CFE11EAC98F500E91FA9 /* CustomNavigationController.swift */,
 				B372CFD31EAC91F800E91FA9 /* String+Validation.swift */,
@@ -180,6 +183,7 @@
 			files = (
 				B372CFDE1EAC91F800E91FA9 /* Configuration.swift in Sources */,
 				B372CFDD1EAC91F800E91FA9 /* PhoneViewController.swift in Sources */,
+				B34B35F61EAD975C0012E404 /* UserDataModel.swift in Sources */,
 				B372CFBA1EAC91A900E91FA9 /* ViewController.swift in Sources */,
 				B372CFDF1EAC91F800E91FA9 /* String+Validation.swift in Sources */,
 				B372CFE01EAC91F800E91FA9 /* VerifyPhoneViewController.swift in Sources */,

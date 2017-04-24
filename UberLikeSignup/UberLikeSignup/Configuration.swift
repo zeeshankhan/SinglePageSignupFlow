@@ -59,7 +59,7 @@ enum ViewType {
         case .name: return "full name"
         case .email: return "name@example.com"
         case .password: return "password"
-        case .phone: return "050 123 4567"
+        case .phone: return "50 123 4567"
         case .invitationCode: return "Invitation Code (Optional)"
         case .verify: return "1234"
         }
@@ -99,7 +99,7 @@ enum ViewType {
         case .name: return text.isValidName()
         case .email: return text.isValidEmail()
         case .password: return text.characters.count > 5
-        case .phone: return text.characters.count > 9 //text.isValidPhone()
+        case .phone: return text.characters.count > 8 //text.isValidPhone()
         case .invitationCode: return true //text.characters.count > 5
         case .verify: return text.characters.count == 4
         }
@@ -114,42 +114,6 @@ enum ViewType {
         case .invitationCode: return ""
         case .verify: return "⚠️ Invalid code"
         }
-    }
-    
-    var title: String {
-        switch self {
-        case .name: return "Enter your full name"
-        case .email: return "Enter your email address"
-        case .password: return "Create password"
-        case .phone: return "Enter your mobile number"
-        case .invitationCode: return ""
-        case .verify: return "Verify Account"
-        }
-    }
-    
-    var subtitle: String {
-        switch self {
-        case .name: return "To know what to call you and help your captain communicate with you"
-        case .email: return "Email will be used to receive trip receipt and promotions and special offers"
-        case .password: return "It will be used to login your account, should be more than 6 letters"
-        case .phone: return "Will be used to confirm your account"
-        case .invitationCode: return ""
-        case .verify: return "Please enter the verification code we sent to your phone"
-        }
-    }
+    }    
 }
-
-
-struct DataHolder {
-    
-    enum FlowType {
-        case signUp, signIn, forgotPassword, facebook
-    }
-    
-    var items: [ViewType] = []
-}
-
-
-
-
 

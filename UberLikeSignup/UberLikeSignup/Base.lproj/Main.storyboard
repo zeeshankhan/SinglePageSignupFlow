@@ -101,7 +101,7 @@
                                 </constraints>
                             </view>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOk-67-CEt">
-                                <rect key="frame" x="47" y="619" width="281" height="40"/>
+                                <rect key="frame" x="16" y="619" width="281" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="cw2-HT-LlU"/>
@@ -117,11 +117,11 @@
                             <constraint firstItem="XOk-67-CEt" firstAttribute="top" secondItem="9Uf-Q7-M6w" secondAttribute="bottom" constant="8" id="1Ae-2P-aKh"/>
                             <constraint firstItem="9Uf-Q7-M6w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="D90-gA-sVz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XOk-67-CEt" secondAttribute="bottom" constant="8" id="KSk-CR-NYf"/>
-                            <constraint firstItem="XOk-67-CEt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Obs-t0-ZGR"/>
                             <constraint firstAttribute="trailing" secondItem="9Uf-Q7-M6w" secondAttribute="trailing" constant="16" id="Qgo-97-s4s"/>
                             <constraint firstAttribute="bottomMargin" secondItem="wHg-iS-0h2" secondAttribute="bottom" id="Sps-JZ-lUl"/>
                             <constraint firstItem="wHg-iS-0h2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V7o-hf-34X"/>
                             <constraint firstItem="wHg-iS-0h2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="W6V-YR-5VZ"/>
+                            <constraint firstItem="XOk-67-CEt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="YKu-Ix-OvH"/>
                             <constraint firstAttribute="trailing" secondItem="wHg-iS-0h2" secondAttribute="trailing" id="hJO-RN-LKK"/>
                         </constraints>
                     </view>
@@ -636,27 +636,53 @@ promotions and special offers.</string>
                                     <segue destination="AzR-yG-UE9" kind="embed" identifier="EntryViewController" id="daW-vR-32C"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVF-ah-VMg">
+                                <rect key="frame" x="20" y="564" width="124" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Qvf-8m-ZUS"/>
+                                </constraints>
+                                <state key="normal" title="Forgot Passoword"/>
+                                <connections>
+                                    <action selector="forgotPasswordAction" destination="2rk-Jq-Pck" eventType="touchUpInside" id="dnx-4k-qVG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTp-vZ-1xq">
+                                <rect key="frame" x="299" y="564" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="217-vO-Umm"/>
+                                </constraints>
+                                <state key="normal" title="Support"/>
+                                <connections>
+                                    <action selector="supportAction" destination="2rk-Jq-Pck" eventType="touchUpInside" id="EB6-H6-yJz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="W0T-pt-uak" secondAttribute="trailing" id="3o7-7u-pQO"/>
                             <constraint firstItem="J6K-md-Wat" firstAttribute="top" secondItem="DHp-bD-Laa" secondAttribute="bottom" id="4MO-Ay-TXw"/>
+                            <constraint firstAttribute="trailing" secondItem="dTp-vZ-1xq" secondAttribute="trailing" constant="20" id="H6c-Mi-zWC"/>
                             <constraint firstAttribute="trailing" secondItem="DHp-bD-Laa" secondAttribute="trailing" id="IZ1-yC-eOY"/>
                             <constraint firstItem="jht-Rl-8hb" firstAttribute="leading" secondItem="Lh8-mx-KFy" secondAttribute="leading" id="J9w-8m-iqG"/>
+                            <constraint firstItem="dTp-vZ-1xq" firstAttribute="centerY" secondItem="NVF-ah-VMg" secondAttribute="centerY" id="JrU-UM-1ab"/>
                             <constraint firstItem="W0T-pt-uak" firstAttribute="top" secondItem="6xK-LS-pNv" secondAttribute="bottom" constant="48" id="MLQ-9u-kVu"/>
                             <constraint firstItem="W0T-pt-uak" firstAttribute="leading" secondItem="Lh8-mx-KFy" secondAttribute="leading" id="XG7-Re-pfc"/>
+                            <constraint firstItem="NVF-ah-VMg" firstAttribute="leading" secondItem="Lh8-mx-KFy" secondAttribute="leading" constant="20" id="qkQ-Dh-m8F"/>
                             <constraint firstItem="jht-Rl-8hb" firstAttribute="top" secondItem="Lh8-mx-KFy" secondAttribute="top" constant="20" id="tZB-yE-ufq"/>
                             <constraint firstItem="DHp-bD-Laa" firstAttribute="leading" secondItem="Lh8-mx-KFy" secondAttribute="leading" id="ugk-hq-YBv"/>
+                            <constraint firstItem="DHp-bD-Laa" firstAttribute="top" secondItem="NVF-ah-VMg" secondAttribute="bottom" constant="25" id="y3A-GR-CrF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnBottomMargin" destination="4MO-Ay-TXw" id="WA8-b7-2dV"/>
                         <outlet property="btnContinue" destination="DHp-bD-Laa" id="37R-9G-VbZ"/>
+                        <outlet property="btnForgotPassword" destination="NVF-ah-VMg" id="kg7-Kx-X0n"/>
+                        <outlet property="btnSupport" destination="dTp-vZ-1xq" id="HJa-ZL-7kL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPt-ST-IAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="484"/>
+            <point key="canvasLocation" x="640.79999999999995" y="483.50824587706148"/>
         </scene>
         <!--Country ListVC-->
         <scene sceneID="EiZ-8j-0bB">

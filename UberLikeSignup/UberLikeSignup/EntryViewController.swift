@@ -13,18 +13,20 @@ typealias EntryViewCallback = ((_ item: ViewType) -> Void)
 class EntryViewController: UIViewController {
 
     var viewType = ViewType.name("")
+    var topTitle = ""
+    var topSubTitle = ""
 
-    @IBOutlet weak var lblTitle: UILabel!
-    @IBOutlet weak var lblSubTitle: UILabel!
+    @IBOutlet weak fileprivate var lblTitle: UILabel!
+    @IBOutlet weak fileprivate var lblSubTitle: UILabel!
     
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var separator: UIView!       // Bottom separator view
-    @IBOutlet weak var lblWarning: UILabel!     // Red warning label
+    @IBOutlet weak fileprivate var separator: UIView!       // Bottom separator view
+    @IBOutlet weak fileprivate var lblWarning: UILabel!     // Red warning label
 
     // Phone specific only
-    @IBOutlet weak var codeView: UIView!
-    @IBOutlet weak var imgCountry: UIImageView!
-    @IBOutlet weak var lblCode: UILabel!
+    @IBOutlet weak fileprivate var codeView: UIView!
+    @IBOutlet weak fileprivate var imgCountry: UIImageView!
+    @IBOutlet weak fileprivate var lblCode: UILabel!
     
     
     var isModified = false
@@ -48,8 +50,8 @@ class EntryViewController: UIViewController {
     //MARK: Private functions
     func setupView() {
 
-        lblTitle.text = viewType.title
-        lblSubTitle.text = viewType.subtitle
+        lblTitle.text = topTitle
+        lblSubTitle.text = topSubTitle
 
         separator.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         lblWarning.text = ""

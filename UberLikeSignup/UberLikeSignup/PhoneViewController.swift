@@ -11,6 +11,8 @@ import UIKit
 class PhoneViewController: EntryBaseViewController {
 
     override func setupChildViewController(viewController: EntryViewController) {
+        viewController.topTitle = "Enter your mobile number"
+        viewController.topSubTitle = "Will be used to confirm your account"
         viewController.viewType = .phone(imageCode: "AE", code: "971", number: "")
         viewController.didEndEditing = nil
         viewController.textDidChange = { [weak self] viewType in
@@ -25,14 +27,35 @@ class PhoneViewController: EntryBaseViewController {
             return
         }
         
-        if editController.viewType.value.characters.count < 11 {
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "VerifyPhoneViewController") as! VerifyPhoneViewController
-            navigationController?.pushViewController(vc, animated: true)
-        }
-        else {
-            editController.modifyCellErrorState(isError: true)
+        let viewType = editController.viewType
+        var phone = ""
+        if case .phone(_, let code, let number) = viewType {
+            phone = code + number
         }
         
+        guard phone.characters.count == 12 else {
+            editController.modifyCellErrorState(isError: true)
+            return
+        }
+        
+        var vc: EntryBaseViewController
+        
+        if phone != "971526097571" {
+            dataModel.flowType = .signUp
+            dataModel.phone = phone
+            
+            vc = self.storyboard?.instantiateViewController(withIdentifier: "VerifyPhoneViewController") as! VerifyPhoneViewController
+            vc.dataModel = dataModel
+        }
+        else {
+            dataModel.flowType = .signIn
+            dataModel.phone = phone
+
+            vc = self.storyboard?.instantiateViewController(withIdentifier: "PasswordViewController") as! PasswordViewController
+            vc.dataModel = dataModel
+        }
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     @IBAction override func backAction() {

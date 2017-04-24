@@ -11,6 +11,8 @@ import UIKit
 class EntryBaseViewController: UIViewController {
 
     var editController: EntryViewController?
+    var dataModel = UserDataModel()
+    
     @IBOutlet weak var btnContinue: UIButton!
     @IBOutlet weak var btnBottomMargin: NSLayoutConstraint!
     
