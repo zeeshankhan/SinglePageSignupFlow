@@ -67,5 +67,11 @@ class EntryBaseViewController: UIViewController {
         setupChildViewController(viewController: vc)
     }
 
+}
+
+/* ⚠️ Subclass must overide these functions */
+extension EntryBaseViewController {
+
     func setupChildViewController(viewController: EntryViewController) {}
 }
+
