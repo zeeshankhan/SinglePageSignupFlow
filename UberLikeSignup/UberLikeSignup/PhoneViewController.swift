@@ -11,6 +11,8 @@ import UIKit
 class PhoneViewController: EntryBaseViewController {
 
     override func setupChildViewController(viewController: EntryViewController) {
+        viewController.numberOfPages = dataModel.flowType.totalSteps
+        viewController.currentPage = 0
         viewController.topTitle = "Enter your mobile number"
         viewController.topSubTitle = "Will be used to confirm your account"
         viewController.viewType = .phone(imageCode: "AE", code: "971", number: "")
@@ -58,7 +60,7 @@ class PhoneViewController: EntryBaseViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
 
-    @IBAction override func backAction() {
+    @IBAction func cancelAction() {
         guard let editController = editController else {
             return
         }

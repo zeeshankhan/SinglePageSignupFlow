@@ -143,38 +143,55 @@
                         <viewControllerLayoutGuide type="bottom" id="NaZ-o3-KZY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ojA-pU-gLg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pageControl hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nAL-mi-27L">
+                                <rect key="frame" x="20" y="-12" width="335" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-jV-bOx">
+                                <rect key="frame" x="20" y="16" width="335" height="29"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-xf-EAT">
-                                <rect key="frame" x="20" y="50.5" width="335" height="33.5"/>
+                                <rect key="frame" x="20" y="53" width="335" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Email will be used to receive trip receipt and
 promotions and special offers.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqS-WN-LlY" userLabel="Code">
-                                <rect key="frame" x="20" y="109" width="83.5" height="40"/>
+                                <rect key="frame" x="30" y="121.5" width="110" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="AE" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-2R-Rto">
-                                        <rect key="frame" x="0.0" y="11" width="23" height="17"/>
+                                        <rect key="frame" x="0.0" y="6" width="36" height="27"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="4kQ-Tb-Fgp"/>
+                                            <constraint firstAttribute="width" constant="36" id="IRq-GR-deW"/>
+                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sortDown" translatesAutoresizingMaskIntoConstraints="NO" id="KyL-hW-mrm">
-                                        <rect key="frame" x="23" y="8" width="24" height="24"/>
+                                        <rect key="frame" x="36" y="8" width="24" height="24"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+971" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-Oh-IWU">
-                                        <rect key="frame" x="47" y="10" width="37" height="20"/>
+                                        <rect key="frame" x="60" y="6.5" width="50.5" height="26.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-bM-t8Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="83.5" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
                                         <connections>
                                             <action selector="phoneCodeAction" destination="AzR-yG-UE9" eventType="touchUpInside" id="wFu-CF-7eI"/>
                                         </connections>
@@ -197,53 +214,50 @@ promotions and special offers.</string>
                                     <constraint firstItem="KyL-hW-mrm" firstAttribute="leading" secondItem="Yqf-2R-Rto" secondAttribute="trailing" id="wvd-QI-hYv"/>
                                 </constraints>
                             </view>
-                            <textField clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="050 123 4567" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-2e-qcO">
-                                <rect key="frame" x="111.5" y="109" width="243.5" height="40"/>
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="050 123 4567" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-2e-qcO">
+                                <rect key="frame" x="148" y="121.5" width="197" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AZ3-y2-ndB"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad"/>
                                 <connections>
                                     <outlet property="delegate" destination="AzR-yG-UE9" id="T62-sU-fe8"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8I-jh-5O6" userLabel="Separator">
-                                <rect key="frame" x="20" y="149" width="327" height="2"/>
+                                <rect key="frame" x="30" y="169.5" width="307" height="2"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="uQr-qg-v1S"/>
                                 </constraints>
                             </view>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in your name." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3R-hh-RcT">
-                                <rect key="frame" x="20" y="159" width="134" height="15"/>
+                                <rect key="frame" x="30" y="179.5" width="179.5" height="20.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-jV-bOx">
-                                <rect key="frame" x="20" y="16" width="335" height="26.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.8666666666666667" green="0.24313725490196078" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tbu-2e-qcO" firstAttribute="top" secondItem="fjH-xf-EAT" secondAttribute="bottom" constant="25" id="5sB-UM-Idg"/>
+                            <constraint firstItem="tbu-2e-qcO" firstAttribute="top" secondItem="fjH-xf-EAT" secondAttribute="bottom" constant="30" id="5sB-UM-Idg"/>
                             <constraint firstItem="N3R-hh-RcT" firstAttribute="leading" secondItem="V8I-jh-5O6" secondAttribute="leading" id="6xr-L3-FdO"/>
-                            <constraint firstItem="V8I-jh-5O6" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="749-ej-Oe3"/>
+                            <constraint firstItem="V8I-jh-5O6" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="30" id="749-ej-Oe3"/>
+                            <constraint firstItem="nAL-mi-27L" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="9lm-PH-icw"/>
                             <constraint firstItem="N3R-hh-RcT" firstAttribute="top" secondItem="V8I-jh-5O6" secondAttribute="bottom" constant="8" id="H3F-Rw-y1d"/>
-                            <constraint firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="20" id="NK9-yd-82g"/>
+                            <constraint firstAttribute="trailing" secondItem="nAL-mi-27L" secondAttribute="trailing" constant="20" id="HTb-ky-SzK"/>
+                            <constraint firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="30" id="NK9-yd-82g"/>
                             <constraint firstAttribute="trailing" secondItem="KFJ-jV-bOx" secondAttribute="trailing" constant="20" id="SlJ-XF-4p0"/>
                             <constraint firstItem="fjH-xf-EAT" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="T2y-VH-v4q"/>
+                            <constraint firstItem="nAL-mi-27L" firstAttribute="centerX" secondItem="ojA-pU-gLg" secondAttribute="centerX" id="WLm-JR-4gF"/>
                             <constraint firstItem="tbu-2e-qcO" firstAttribute="centerY" secondItem="DqS-WN-LlY" secondAttribute="centerY" id="cvL-IJ-Dt4"/>
-                            <constraint firstItem="V8I-jh-5O6" firstAttribute="top" secondItem="tbu-2e-qcO" secondAttribute="bottom" id="fxP-wG-t50"/>
-                            <constraint firstItem="DqS-WN-LlY" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="hio-sx-UCG"/>
+                            <constraint firstItem="V8I-jh-5O6" firstAttribute="top" secondItem="tbu-2e-qcO" secondAttribute="bottom" constant="8" id="fxP-wG-t50"/>
+                            <constraint firstItem="nAL-mi-27L" firstAttribute="top" secondItem="ojA-pU-gLg" secondAttribute="top" constant="-12" id="gWy-A2-gvq"/>
+                            <constraint firstItem="DqS-WN-LlY" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="30" id="hio-sx-UCG"/>
                             <constraint firstItem="V8I-jh-5O6" firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="-8" id="jZG-Gy-Ms8"/>
                             <constraint firstItem="fjH-xf-EAT" firstAttribute="top" secondItem="KFJ-jV-bOx" secondAttribute="bottom" constant="8" id="nsN-94-JcR"/>
                             <constraint firstItem="KFJ-jV-bOx" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="qc6-Sc-jae"/>
@@ -259,6 +273,7 @@ promotions and special offers.</string>
                         <outlet property="lblSubTitle" destination="fjH-xf-EAT" id="yzs-Rs-Nnp"/>
                         <outlet property="lblTitle" destination="KFJ-jV-bOx" id="Rpb-Ga-2Fi"/>
                         <outlet property="lblWarning" destination="N3R-hh-RcT" id="Zk1-40-H7p"/>
+                        <outlet property="pageControl" destination="nAL-mi-27L" id="TWJ-g7-YB1"/>
                         <outlet property="separator" destination="V8I-jh-5O6" id="FT4-dh-rO2"/>
                         <outlet property="textField" destination="tbu-2e-qcO" id="I61-UX-Kih"/>
                     </connections>
@@ -279,7 +294,7 @@ promotions and special offers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxs-CA-H2j">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxs-CA-H2j">
                                 <rect key="frame" x="0.0" y="20" width="48" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -395,10 +410,10 @@ promotions and special offers.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5I-7o-ffS">
-                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="Npb-8f-d7q"/>
+                                    <constraint firstAttribute="height" constant="56" id="Npb-8f-d7q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Verify"/>
@@ -410,10 +425,10 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-lu-55E">
-                                <rect key="frame" x="0.0" y="68" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="fdz-l2-Yzs"/>
+                                    <constraint firstAttribute="height" constant="200" id="fdz-l2-Yzs"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="AzR-yG-UE9" kind="embed" identifier="EntryViewController" id="gve-Y4-hsT"/>
@@ -458,7 +473,7 @@ promotions and special offers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNR-fd-NDI">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MNR-fd-NDI">
                                 <rect key="frame" x="0.0" y="20" width="48" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -471,10 +486,10 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoH-7x-R8D">
-                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="g0X-vu-nK5"/>
+                                    <constraint firstAttribute="height" constant="56" id="g0X-vu-nK5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Email"/>
@@ -486,10 +501,10 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-nW-B8q">
-                                <rect key="frame" x="0.0" y="68" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="u3m-o5-E5T"/>
+                                    <constraint firstAttribute="height" constant="200" id="u3m-o5-E5T"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="AzR-yG-UE9" kind="embed" identifier="EntryViewController" id="se0-fD-kQb"/>
@@ -529,7 +544,7 @@ promotions and special offers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztg-za-uf7">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztg-za-uf7">
                                 <rect key="frame" x="0.0" y="20" width="48" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -542,10 +557,10 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ox2-Y0-rel">
-                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="mRE-E4-uHi"/>
+                                    <constraint firstAttribute="height" constant="56" id="mRE-E4-uHi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Name"/>
@@ -557,9 +572,9 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nK2-hd-8fm">
-                                <rect key="frame" x="0.0" y="68" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="WAi-ZO-EzY"/>
+                                    <constraint firstAttribute="height" constant="200" id="WAi-ZO-EzY"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="AzR-yG-UE9" kind="embed" identifier="EntryViewController" id="YyW-Yy-10p"/>
@@ -599,7 +614,7 @@ promotions and special offers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jht-Rl-8hb">
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jht-Rl-8hb">
                                 <rect key="frame" x="0.0" y="20" width="48" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -612,10 +627,10 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DHp-bD-Laa">
-                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="IJW-EE-Zvb"/>
+                                    <constraint firstAttribute="height" constant="56" id="IJW-EE-Zvb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Password"/>
@@ -627,17 +642,17 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0T-pt-uak">
-                                <rect key="frame" x="0.0" y="68" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="5JB-Oz-3DM"/>
+                                    <constraint firstAttribute="height" constant="200" id="5JB-Oz-3DM"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="AzR-yG-UE9" kind="embed" identifier="EntryViewController" id="daW-vR-32C"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVF-ah-VMg">
-                                <rect key="frame" x="20" y="564" width="124" height="30"/>
+                                <rect key="frame" x="20" y="556" width="124" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Qvf-8m-ZUS"/>
                                 </constraints>
@@ -647,7 +662,7 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTp-vZ-1xq">
-                                <rect key="frame" x="299" y="564" width="56" height="30"/>
+                                <rect key="frame" x="299" y="556" width="56" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="217-vO-Umm"/>
                                 </constraints>
@@ -799,23 +814,23 @@ promotions and special offers.</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-eI-Ej7">
-                                <rect key="frame" x="0.0" y="20" width="48" height="48"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-eI-Ej7">
+                                <rect key="frame" x="299" y="20" width="56" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ioM-fY-LyC"/>
-                                    <constraint firstAttribute="width" constant="48" id="uJQ-vI-xX7"/>
                                 </constraints>
-                                <state key="normal" image="backIcon"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="backAction" destination="zd7-ry-bFo" eventType="touchUpInside" id="1OU-LF-vUO"/>
+                                    <action selector="cancelAction" destination="zd7-ry-bFo" eventType="touchUpInside" id="pgt-IY-RCR"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k1d-vp-lDG">
-                                <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
                                 <color key="backgroundColor" red="0.15686274510000001" green="0.73333333329999995" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="gE3-Uu-FuE"/>
+                                    <constraint firstAttribute="height" constant="56" id="gE3-Uu-FuE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Phone"/>
@@ -827,10 +842,10 @@ promotions and special offers.</string>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="8EA-nA-QJE">
-                                <rect key="frame" x="0.0" y="68" width="375" height="180"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="OLb-um-JLJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="OLb-um-JLJ"/>
                                 </constraints>
                                 <connections>
                                     <segue destination="AzR-yG-UE9" kind="embed" identifier="EntryViewController" id="RY9-pQ-kHo"/>
@@ -839,8 +854,8 @@ promotions and special offers.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ofc-eI-Ej7" secondAttribute="trailing" constant="20" id="9b0-iY-xMh"/>
                             <constraint firstItem="8EA-nA-QJE" firstAttribute="leading" secondItem="KMX-pA-dzi" secondAttribute="leading" id="Ezc-4s-Zi3"/>
-                            <constraint firstItem="Ofc-eI-Ej7" firstAttribute="leading" secondItem="KMX-pA-dzi" secondAttribute="leading" id="Iy4-hE-NV4"/>
                             <constraint firstItem="k1d-vp-lDG" firstAttribute="leading" secondItem="KMX-pA-dzi" secondAttribute="leading" id="N1a-NZ-KfU"/>
                             <constraint firstAttribute="trailing" secondItem="8EA-nA-QJE" secondAttribute="trailing" id="Ojb-wg-EFU"/>
                             <constraint firstItem="8EA-nA-QJE" firstAttribute="top" secondItem="bNc-pU-aGf" secondAttribute="bottom" constant="48" id="Xan-V7-rjr"/>

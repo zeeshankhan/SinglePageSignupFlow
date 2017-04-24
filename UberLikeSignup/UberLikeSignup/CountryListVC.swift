@@ -28,7 +28,7 @@ class CountryListVC: UIViewController {
         countryListTableView.sectionIndexBackgroundColor = UIColor.clear
         
         let cancelButton = UIBarButtonItem.init(title: "Cancel", style: .done, target: self, action: #selector(cancelAction))
-        navigationController?.navigationItem.leftBarButtonItem = cancelButton
+        self.navigationItem.rightBarButtonItem = cancelButton
 
         if let fileUrl = Bundle.main.url(forResource: "CountryList", withExtension: "plist"),
             let data = try? Data(contentsOf: fileUrl) {

@@ -16,8 +16,13 @@ class EntryViewController: UIViewController {
     var topTitle = ""
     var topSubTitle = ""
 
+    var numberOfPages = 1
+    var currentPage = 0
+    
     @IBOutlet weak fileprivate var lblTitle: UILabel!
     @IBOutlet weak fileprivate var lblSubTitle: UILabel!
+    
+    @IBOutlet weak fileprivate var pageControl: UIPageControl!
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak fileprivate var separator: UIView!       // Bottom separator view
@@ -50,6 +55,10 @@ class EntryViewController: UIViewController {
     //MARK: Private functions
     func setupView() {
 
+        pageControl.numberOfPages = numberOfPages
+        pageControl.currentPage = currentPage
+        pageControl.hidesForSinglePage = true
+        
         lblTitle.text = topTitle
         lblSubTitle.text = topSubTitle
 
@@ -70,7 +79,7 @@ class EntryViewController: UIViewController {
                                                       toItem: view,
                                                       attribute: NSLayoutAttribute.leading,
                                                       multiplier: 1,
-                                                      constant: 20)
+                                                      constant: 30)
             view.addConstraint(constraintButton)
             view.layoutIfNeeded()
         }
@@ -81,7 +90,7 @@ class EntryViewController: UIViewController {
     func modifyCellErrorState(isError: Bool) {
         if isModified == false { return }
         if isError {
-            separator.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            separator.backgroundColor = #colorLiteral(red: 0.8666666667, green: 0.2431372549, blue: 0.3215686275, alpha: 1)
             lblWarning.text = viewType.warningMessage()
         }
         else {

@@ -107,12 +107,12 @@ enum ViewType {
 
     func warningMessage() -> String {
         switch self {
-        case .name: return "⚠️ Please fill in your name."
-        case .email: return self.value.isEmpty ? "⚠️ Please fill in your email." : "⚠️ Invalid email format."
-        case .password: return self.value.isEmpty ? "⚠️ Please fill in your password." : "⚠️ Password should be 6 characters long."
-        case .phone: return self.value.isEmpty ? "⚠️ Please fill in your phone." : "⚠️ Invalid phone number."
+        case .name: return "Please fill in your name."
+        case .email: return self.value.isEmpty ? "Please fill in your email." : "Invalid email format."
+        case .password: return self.value.isEmpty ? "Please fill in your password." : "Password should be 6 characters long."
+        case .phone: return self.value.isEmpty ? "Please fill in your phone." : "Invalid phone number."
         case .invitationCode: return ""
-        case .verify: return "⚠️ Invalid code"
+        case .verify: return "Invalid code"
         }
     }    
 }
