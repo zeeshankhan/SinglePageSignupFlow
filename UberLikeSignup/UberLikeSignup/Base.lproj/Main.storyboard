@@ -146,12 +146,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl hidden="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="nAL-mi-27L">
-                                <rect key="frame" x="20" y="-12" width="335" height="37"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </pageControl>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your mobile number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFJ-jV-bOx">
                                 <rect key="frame" x="20" y="16" width="335" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -159,7 +153,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-xf-EAT">
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjH-xf-EAT">
                                 <rect key="frame" x="20" y="53" width="335" height="38.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Email will be used to receive trip receipt and
@@ -169,7 +163,7 @@ promotions and special offers.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqS-WN-LlY" userLabel="Code">
-                                <rect key="frame" x="20" y="121.5" width="106" height="40"/>
+                                <rect key="frame" x="20" y="120" width="106" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="AE" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-2R-Rto">
                                         <rect key="frame" x="0.0" y="6" width="36" height="27"/>
@@ -215,7 +209,7 @@ promotions and special offers.</string>
                                 </constraints>
                             </view>
                             <textField clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="050 123 4567" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-2e-qcO">
-                                <rect key="frame" x="134" y="121.5" width="221" height="40"/>
+                                <rect key="frame" x="134" y="120" width="221" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AZ3-y2-ndB"/>
@@ -228,14 +222,14 @@ promotions and special offers.</string>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8I-jh-5O6" userLabel="Separator">
-                                <rect key="frame" x="20" y="169.5" width="327" height="2"/>
+                                <rect key="frame" x="20" y="168" width="327" height="2"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="uQr-qg-v1S"/>
                                 </constraints>
                             </view>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in your name." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3R-hh-RcT">
-                                <rect key="frame" x="20" y="179.5" width="179.5" height="20.5"/>
+                                <rect key="frame" x="20" y="178" width="179.5" height="20.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.8666666666666667" green="0.24313725490196078" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -244,24 +238,20 @@ promotions and special offers.</string>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="tbu-2e-qcO" firstAttribute="top" secondItem="fjH-xf-EAT" secondAttribute="bottom" constant="30" id="5sB-UM-Idg"/>
                             <constraint firstItem="N3R-hh-RcT" firstAttribute="leading" secondItem="V8I-jh-5O6" secondAttribute="leading" id="6xr-L3-FdO"/>
                             <constraint firstItem="V8I-jh-5O6" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="749-ej-Oe3"/>
-                            <constraint firstItem="nAL-mi-27L" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="9lm-PH-icw"/>
                             <constraint firstItem="N3R-hh-RcT" firstAttribute="top" secondItem="V8I-jh-5O6" secondAttribute="bottom" constant="8" id="H3F-Rw-y1d"/>
-                            <constraint firstAttribute="trailing" secondItem="nAL-mi-27L" secondAttribute="trailing" constant="20" id="HTb-ky-SzK"/>
                             <constraint firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="20" id="NK9-yd-82g"/>
                             <constraint firstAttribute="trailing" secondItem="KFJ-jV-bOx" secondAttribute="trailing" constant="20" id="SlJ-XF-4p0"/>
                             <constraint firstItem="fjH-xf-EAT" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="T2y-VH-v4q"/>
-                            <constraint firstItem="nAL-mi-27L" firstAttribute="centerX" secondItem="ojA-pU-gLg" secondAttribute="centerX" id="WLm-JR-4gF"/>
                             <constraint firstItem="tbu-2e-qcO" firstAttribute="centerY" secondItem="DqS-WN-LlY" secondAttribute="centerY" id="cvL-IJ-Dt4"/>
                             <constraint firstItem="V8I-jh-5O6" firstAttribute="top" secondItem="tbu-2e-qcO" secondAttribute="bottom" constant="8" id="fxP-wG-t50"/>
-                            <constraint firstItem="nAL-mi-27L" firstAttribute="top" secondItem="ojA-pU-gLg" secondAttribute="top" constant="-12" id="gWy-A2-gvq"/>
                             <constraint firstItem="DqS-WN-LlY" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="hio-sx-UCG"/>
                             <constraint firstItem="V8I-jh-5O6" firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="-8" id="jZG-Gy-Ms8"/>
                             <constraint firstItem="fjH-xf-EAT" firstAttribute="top" secondItem="KFJ-jV-bOx" secondAttribute="bottom" constant="8" id="nsN-94-JcR"/>
                             <constraint firstItem="KFJ-jV-bOx" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="qc6-Sc-jae"/>
                             <constraint firstItem="tbu-2e-qcO" firstAttribute="leading" secondItem="DqS-WN-LlY" secondAttribute="trailing" constant="8" id="yGW-yM-4pu"/>
+                            <constraint firstItem="tbu-2e-qcO" firstAttribute="top" secondItem="ojA-pU-gLg" secondAttribute="topMargin" constant="120" id="yOp-ac-St0"/>
                             <constraint firstItem="KFJ-jV-bOx" firstAttribute="top" secondItem="4Ry-Xj-x1l" secondAttribute="bottom" constant="16" id="z9j-pH-NFI"/>
                             <constraint firstAttribute="trailing" secondItem="fjH-xf-EAT" secondAttribute="trailing" constant="20" id="zD2-cg-gZe"/>
                         </constraints>
@@ -273,14 +263,13 @@ promotions and special offers.</string>
                         <outlet property="lblSubTitle" destination="fjH-xf-EAT" id="yzs-Rs-Nnp"/>
                         <outlet property="lblTitle" destination="KFJ-jV-bOx" id="Rpb-Ga-2Fi"/>
                         <outlet property="lblWarning" destination="N3R-hh-RcT" id="Zk1-40-H7p"/>
-                        <outlet property="pageControl" destination="nAL-mi-27L" id="TWJ-g7-YB1"/>
                         <outlet property="separator" destination="V8I-jh-5O6" id="FT4-dh-rO2"/>
                         <outlet property="textField" destination="tbu-2e-qcO" id="I61-UX-Kih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQm-1e-BFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640" y="1149"/>
+            <point key="canvasLocation" x="639.20000000000005" y="1148.7256371814094"/>
         </scene>
         <!--Verify Phone View Controller-->
         <scene sceneID="98f-zp-vRQ">
@@ -418,14 +407,14 @@ promotions and special offers.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Verify"/>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.1333333333" green="0.62352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="continueAction" destination="wgb-hE-m7J" eventType="touchUpInside" id="ISZ-Vw-AU0"/>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-lu-55E">
-                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="fdz-l2-Yzs"/>
@@ -441,19 +430,19 @@ promotions and special offers.</string>
                             <constraint firstItem="wxs-CA-H2j" firstAttribute="top" secondItem="wVk-D7-hrg" secondAttribute="topMargin" constant="20" id="2Du-PS-ath"/>
                             <constraint firstAttribute="trailing" secondItem="Tja-02-DDj" secondAttribute="trailing" constant="16" id="4Gv-aE-Aux"/>
                             <constraint firstAttribute="trailing" secondItem="BzL-lu-55E" secondAttribute="trailing" id="Aso-yo-Y46"/>
-                            <constraint firstItem="kds-lV-yLB" firstAttribute="top" secondItem="A5I-7o-ffS" secondAttribute="bottom" id="LgY-ZE-bhf"/>
                             <constraint firstItem="wxs-CA-H2j" firstAttribute="leading" secondItem="wVk-D7-hrg" secondAttribute="leading" id="Li0-Uv-Xvk"/>
                             <constraint firstItem="BzL-lu-55E" firstAttribute="leading" secondItem="wVk-D7-hrg" secondAttribute="leading" id="Njx-Wi-krp"/>
                             <constraint firstItem="dsK-Hs-86m" firstAttribute="leading" secondItem="Tja-02-DDj" secondAttribute="leading" id="VFh-hl-UKd"/>
                             <constraint firstItem="dsK-Hs-86m" firstAttribute="top" secondItem="Tja-02-DDj" secondAttribute="bottom" constant="17" id="Waa-9l-4qr"/>
-                            <constraint firstItem="BzL-lu-55E" firstAttribute="top" secondItem="gVs-n0-bbn" secondAttribute="bottom" constant="48" id="XYK-mY-4jF"/>
+                            <constraint firstItem="BzL-lu-55E" firstAttribute="top" secondItem="gVs-n0-bbn" secondAttribute="bottom" constant="40" id="XYK-mY-4jF"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="A5I-7o-ffS" secondAttribute="bottom" id="fej-kd-Tu8"/>
                             <constraint firstItem="Tja-02-DDj" firstAttribute="leading" secondItem="wVk-D7-hrg" secondAttribute="leading" constant="24" id="g1u-vc-avY"/>
                             <constraint firstItem="Tja-02-DDj" firstAttribute="top" secondItem="gVs-n0-bbn" secondAttribute="bottom" constant="60" id="iCX-Jv-qRI"/>
                             <constraint firstItem="A5I-7o-ffS" firstAttribute="leading" secondItem="wVk-D7-hrg" secondAttribute="leading" id="umF-Gq-LR2"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBottomMargin" destination="LgY-ZE-bhf" id="HLe-xS-zcA"/>
+                        <outlet property="btnBottomMargin" destination="fej-kd-Tu8" id="b17-BC-xkL"/>
                         <outlet property="btnContinue" destination="A5I-7o-ffS" id="PFh-GL-zCf"/>
                     </connections>
                 </viewController>
@@ -494,14 +483,14 @@ promotions and special offers.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Email"/>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.1333333333" green="0.62352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="continueAction" destination="9Qu-lY-XFN" eventType="touchUpInside" id="YYI-RB-mFV"/>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-nW-B8q">
-                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="u3m-o5-E5T"/>
@@ -515,16 +504,16 @@ promotions and special offers.</string>
                         <constraints>
                             <constraint firstItem="MNR-fd-NDI" firstAttribute="leading" secondItem="08K-i2-gy0" secondAttribute="leading" id="AyX-Ql-BDX"/>
                             <constraint firstAttribute="trailing" secondItem="pbC-nW-B8q" secondAttribute="trailing" id="BtB-pP-bRE"/>
-                            <constraint firstItem="CX9-o2-gZC" firstAttribute="top" secondItem="RoH-7x-R8D" secondAttribute="bottom" id="G2K-we-mTR"/>
                             <constraint firstItem="RoH-7x-R8D" firstAttribute="leading" secondItem="08K-i2-gy0" secondAttribute="leading" id="MZi-bN-xqB"/>
                             <constraint firstItem="MNR-fd-NDI" firstAttribute="top" secondItem="08K-i2-gy0" secondAttribute="topMargin" constant="20" id="UUq-Jf-iyP"/>
-                            <constraint firstItem="pbC-nW-B8q" firstAttribute="top" secondItem="HqQ-Vv-74D" secondAttribute="bottom" constant="48" id="bF1-fx-AfT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="RoH-7x-R8D" secondAttribute="bottom" id="WDp-X3-MAf"/>
+                            <constraint firstItem="pbC-nW-B8q" firstAttribute="top" secondItem="HqQ-Vv-74D" secondAttribute="bottom" constant="40" id="aDL-Dr-Fjv"/>
                             <constraint firstAttribute="trailing" secondItem="RoH-7x-R8D" secondAttribute="trailing" id="cnt-7F-wOH"/>
                             <constraint firstItem="pbC-nW-B8q" firstAttribute="leading" secondItem="08K-i2-gy0" secondAttribute="leading" id="kRk-tZ-5Rc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBottomMargin" destination="G2K-we-mTR" id="QKi-ca-2uo"/>
+                        <outlet property="btnBottomMargin" destination="WDp-X3-MAf" id="5uf-01-8uL"/>
                         <outlet property="btnContinue" destination="RoH-7x-R8D" id="cr5-T4-tiU"/>
                     </connections>
                 </viewController>
@@ -565,14 +554,14 @@ promotions and special offers.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Name"/>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.1333333333" green="0.62352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="continueAction" destination="eFH-nB-7KA" eventType="touchUpInside" id="Vs6-a7-exW"/>
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nK2-hd-8fm">
-                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="WAi-ZO-EzY"/>
                                 </constraints>
@@ -584,9 +573,9 @@ promotions and special offers.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ox2-Y0-rel" secondAttribute="trailing" id="4nD-Fk-B8C"/>
-                            <constraint firstItem="nK2-hd-8fm" firstAttribute="top" secondItem="2rS-PO-DTX" secondAttribute="bottom" constant="48" id="JrE-CC-wJ7"/>
-                            <constraint firstItem="rJN-21-m5t" firstAttribute="top" secondItem="ox2-Y0-rel" secondAttribute="bottom" id="Pjc-te-f44"/>
+                            <constraint firstItem="nK2-hd-8fm" firstAttribute="top" secondItem="2rS-PO-DTX" secondAttribute="bottom" constant="40" id="JrE-CC-wJ7"/>
                             <constraint firstItem="nK2-hd-8fm" firstAttribute="leading" secondItem="SYE-xq-nrM" secondAttribute="leading" id="ZqC-hs-hpi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="ox2-Y0-rel" secondAttribute="bottom" id="cSa-xA-qQx"/>
                             <constraint firstItem="Ztg-za-uf7" firstAttribute="leading" secondItem="SYE-xq-nrM" secondAttribute="leading" id="dGR-Rq-Jl3"/>
                             <constraint firstItem="Ztg-za-uf7" firstAttribute="top" secondItem="SYE-xq-nrM" secondAttribute="topMargin" constant="20" id="hwu-ir-RKR"/>
                             <constraint firstItem="ox2-Y0-rel" firstAttribute="leading" secondItem="SYE-xq-nrM" secondAttribute="leading" id="iwF-pt-O8O"/>
@@ -594,7 +583,7 @@ promotions and special offers.</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBottomMargin" destination="Pjc-te-f44" id="MKV-3J-5yx"/>
+                        <outlet property="btnBottomMargin" destination="cSa-xA-qQx" id="8QG-Ae-MVR"/>
                         <outlet property="btnContinue" destination="ox2-Y0-rel" id="2ty-Gf-Rit"/>
                     </connections>
                 </viewController>
@@ -635,14 +624,14 @@ promotions and special offers.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Password"/>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.1333333333" green="0.62352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="continueAction" destination="2rk-Jq-Pck" eventType="touchUpInside" id="YAV-gE-udJ"/>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0T-pt-uak">
-                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="5JB-Oz-3DM"/>
@@ -675,12 +664,12 @@ promotions and special offers.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="W0T-pt-uak" secondAttribute="trailing" id="3o7-7u-pQO"/>
-                            <constraint firstItem="J6K-md-Wat" firstAttribute="top" secondItem="DHp-bD-Laa" secondAttribute="bottom" id="4MO-Ay-TXw"/>
                             <constraint firstAttribute="trailing" secondItem="dTp-vZ-1xq" secondAttribute="trailing" constant="20" id="H6c-Mi-zWC"/>
                             <constraint firstAttribute="trailing" secondItem="DHp-bD-Laa" secondAttribute="trailing" id="IZ1-yC-eOY"/>
                             <constraint firstItem="jht-Rl-8hb" firstAttribute="leading" secondItem="Lh8-mx-KFy" secondAttribute="leading" id="J9w-8m-iqG"/>
                             <constraint firstItem="dTp-vZ-1xq" firstAttribute="centerY" secondItem="NVF-ah-VMg" secondAttribute="centerY" id="JrU-UM-1ab"/>
-                            <constraint firstItem="W0T-pt-uak" firstAttribute="top" secondItem="6xK-LS-pNv" secondAttribute="bottom" constant="48" id="MLQ-9u-kVu"/>
+                            <constraint firstItem="W0T-pt-uak" firstAttribute="top" secondItem="6xK-LS-pNv" secondAttribute="bottom" constant="40" id="MLQ-9u-kVu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DHp-bD-Laa" secondAttribute="bottom" id="UKs-7L-muW"/>
                             <constraint firstItem="W0T-pt-uak" firstAttribute="leading" secondItem="Lh8-mx-KFy" secondAttribute="leading" id="XG7-Re-pfc"/>
                             <constraint firstItem="NVF-ah-VMg" firstAttribute="leading" secondItem="Lh8-mx-KFy" secondAttribute="leading" constant="20" id="qkQ-Dh-m8F"/>
                             <constraint firstItem="jht-Rl-8hb" firstAttribute="top" secondItem="Lh8-mx-KFy" secondAttribute="top" constant="20" id="tZB-yE-ufq"/>
@@ -689,7 +678,7 @@ promotions and special offers.</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBottomMargin" destination="4MO-Ay-TXw" id="WA8-b7-2dV"/>
+                        <outlet property="btnBottomMargin" destination="UKs-7L-muW" id="f7y-od-DJQ"/>
                         <outlet property="btnContinue" destination="DHp-bD-Laa" id="37R-9G-VbZ"/>
                         <outlet property="btnForgotPassword" destination="NVF-ah-VMg" id="kg7-Kx-X0n"/>
                         <outlet property="btnSupport" destination="dTp-vZ-1xq" id="HJa-ZL-7kL"/>
@@ -835,14 +824,14 @@ promotions and special offers.</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Phone"/>
                                 <state key="highlighted">
-                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.1333333333" green="0.62352941179999999" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="continueAction" destination="zd7-ry-bFo" eventType="touchUpInside" id="MmP-jS-Uzw"/>
                                 </connections>
                             </button>
                             <containerView contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="200" translatesAutoresizingMaskIntoConstraints="NO" id="8EA-nA-QJE">
-                                <rect key="frame" x="0.0" y="68" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="OLb-um-JLJ"/>
@@ -858,14 +847,14 @@ promotions and special offers.</string>
                             <constraint firstItem="8EA-nA-QJE" firstAttribute="leading" secondItem="KMX-pA-dzi" secondAttribute="leading" id="Ezc-4s-Zi3"/>
                             <constraint firstItem="k1d-vp-lDG" firstAttribute="leading" secondItem="KMX-pA-dzi" secondAttribute="leading" id="N1a-NZ-KfU"/>
                             <constraint firstAttribute="trailing" secondItem="8EA-nA-QJE" secondAttribute="trailing" id="Ojb-wg-EFU"/>
-                            <constraint firstItem="8EA-nA-QJE" firstAttribute="top" secondItem="bNc-pU-aGf" secondAttribute="bottom" constant="48" id="Xan-V7-rjr"/>
+                            <constraint firstItem="8EA-nA-QJE" firstAttribute="top" secondItem="bNc-pU-aGf" secondAttribute="bottom" constant="40" id="Xan-V7-rjr"/>
                             <constraint firstAttribute="trailing" secondItem="k1d-vp-lDG" secondAttribute="trailing" id="Yoo-Kz-M2O"/>
-                            <constraint firstItem="uyy-ad-eg1" firstAttribute="top" secondItem="k1d-vp-lDG" secondAttribute="bottom" id="fR5-lw-9ov"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="k1d-vp-lDG" secondAttribute="bottom" id="rTG-w8-Npq"/>
                             <constraint firstItem="Ofc-eI-Ej7" firstAttribute="top" secondItem="KMX-pA-dzi" secondAttribute="topMargin" constant="20" id="voo-rs-Aba"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBottomMargin" destination="fR5-lw-9ov" id="WMA-IU-Bct"/>
+                        <outlet property="btnBottomMargin" destination="rTG-w8-Npq" id="WuP-dy-D3b"/>
                         <outlet property="btnContinue" destination="k1d-vp-lDG" id="Q2V-kn-73M"/>
                     </connections>
                 </viewController>
@@ -883,6 +872,6 @@ promotions and special offers.</string>
         <image name="sortDownWhite" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RY9-pQ-kHo"/>
+        <segue reference="YyW-Yy-10p"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B34B35F61EAD975C0012E404 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34B35F51EAD975C0012E404 /* UserDataModel.swift */; };
+		B36FF36E1EB7477A006E4F05 /* UberLikeSignupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF36D1EB7477A006E4F05 /* UberLikeSignupTests.swift */; };
+		B36FF37C1EB7478D006E4F05 /* UberLikeSignupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36FF37B1EB7478D006E4F05 /* UberLikeSignupUITests.swift */; };
 		B372CFB81EAC91A900E91FA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFB71EAC91A900E91FA9 /* AppDelegate.swift */; };
 		B372CFBA1EAC91A900E91FA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFB91EAC91A900E91FA9 /* ViewController.swift */; };
 		B372CFBD1EAC91A900E91FA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B372CFBB1EAC91A900E91FA9 /* Main.storyboard */; };
@@ -29,8 +31,31 @@
 		B3D62CAE1EB451300058E1B3 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D62CAD1EB451300058E1B3 /* PhoneNumberKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B36FF3701EB7477A006E4F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B372CFAC1EAC91A900E91FA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B372CFB31EAC91A900E91FA9;
+			remoteInfo = UberLikeSignup;
+		};
+		B36FF37E1EB7478D006E4F05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B372CFAC1EAC91A900E91FA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B372CFB31EAC91A900E91FA9;
+			remoteInfo = UberLikeSignup;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B34B35F51EAD975C0012E404 /* UserDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		B36FF36B1EB7477A006E4F05 /* UberLikeSignupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberLikeSignupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36FF36D1EB7477A006E4F05 /* UberLikeSignupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLikeSignupTests.swift; sourceTree = "<group>"; };
+		B36FF36F1EB7477A006E4F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B36FF3791EB7478D006E4F05 /* UberLikeSignupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberLikeSignupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36FF37B1EB7478D006E4F05 /* UberLikeSignupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLikeSignupUITests.swift; sourceTree = "<group>"; };
+		B36FF37D1EB7478D006E4F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B372CFB41EAC91A900E91FA9 /* UberLikeSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberLikeSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372CFB71EAC91A900E91FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B372CFB91EAC91A900E91FA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +80,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B36FF3681EB7477A006E4F05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36FF3761EB7478D006E4F05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B372CFB11EAC91A900E91FA9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -66,10 +105,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B36FF36C1EB7477A006E4F05 /* UberLikeSignupTests */ = {
+			isa = PBXGroup;
+			children = (
+				B36FF36D1EB7477A006E4F05 /* UberLikeSignupTests.swift */,
+				B36FF36F1EB7477A006E4F05 /* Info.plist */,
+			);
+			path = UberLikeSignupTests;
+			sourceTree = "<group>";
+		};
+		B36FF37A1EB7478D006E4F05 /* UberLikeSignupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B36FF37B1EB7478D006E4F05 /* UberLikeSignupUITests.swift */,
+				B36FF37D1EB7478D006E4F05 /* Info.plist */,
+			);
+			path = UberLikeSignupUITests;
+			sourceTree = "<group>";
+		};
 		B372CFAB1EAC91A900E91FA9 = {
 			isa = PBXGroup;
 			children = (
 				B372CFB61EAC91A900E91FA9 /* UberLikeSignup */,
+				B36FF36C1EB7477A006E4F05 /* UberLikeSignupTests */,
+				B36FF37A1EB7478D006E4F05 /* UberLikeSignupUITests */,
 				B372CFB51EAC91A900E91FA9 /* Products */,
 				B3D62CAC1EB451300058E1B3 /* Frameworks */,
 			);
@@ -79,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				B372CFB41EAC91A900E91FA9 /* UberLikeSignup.app */,
+				B36FF36B1EB7477A006E4F05 /* UberLikeSignupTests.xctest */,
+				B36FF3791EB7478D006E4F05 /* UberLikeSignupUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +182,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B36FF36A1EB7477A006E4F05 /* UberLikeSignupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36FF3741EB7477A006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupTests" */;
+			buildPhases = (
+				B36FF3671EB7477A006E4F05 /* Sources */,
+				B36FF3681EB7477A006E4F05 /* Frameworks */,
+				B36FF3691EB7477A006E4F05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B36FF3711EB7477A006E4F05 /* PBXTargetDependency */,
+			);
+			name = UberLikeSignupTests;
+			productName = UberLikeSignupTests;
+			productReference = B36FF36B1EB7477A006E4F05 /* UberLikeSignupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B36FF3781EB7478D006E4F05 /* UberLikeSignupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36FF3801EB7478D006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupUITests" */;
+			buildPhases = (
+				B36FF3751EB7478D006E4F05 /* Sources */,
+				B36FF3761EB7478D006E4F05 /* Frameworks */,
+				B36FF3771EB7478D006E4F05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B36FF37F1EB7478D006E4F05 /* PBXTargetDependency */,
+			);
+			name = UberLikeSignupUITests;
+			productName = UberLikeSignupUITests;
+			productReference = B36FF3791EB7478D006E4F05 /* UberLikeSignupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B372CFB31EAC91A900E91FA9 /* UberLikeSignup */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B372CFC61EAC91A900E91FA9 /* Build configuration list for PBXNativeTarget "UberLikeSignup" */;
@@ -149,6 +246,18 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Zeeshan Khan";
 				TargetAttributes = {
+					B36FF36A1EB7477A006E4F05 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = D4S2X6D6DH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B372CFB31EAC91A900E91FA9;
+					};
+					B36FF3781EB7478D006E4F05 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = D4S2X6D6DH;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B372CFB31EAC91A900E91FA9;
+					};
 					B372CFB31EAC91A900E91FA9 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = D4S2X6D6DH;
@@ -170,11 +279,27 @@
 			projectRoot = "";
 			targets = (
 				B372CFB31EAC91A900E91FA9 /* UberLikeSignup */,
+				B36FF36A1EB7477A006E4F05 /* UberLikeSignupTests */,
+				B36FF3781EB7478D006E4F05 /* UberLikeSignupUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B36FF3691EB7477A006E4F05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36FF3771EB7478D006E4F05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B372CFB21EAC91A900E91FA9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +332,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B36FF3671EB7477A006E4F05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36FF36E1EB7477A006E4F05 /* UberLikeSignupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B36FF3751EB7478D006E4F05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B36FF37C1EB7478D006E4F05 /* UberLikeSignupUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B372CFB01EAC91A900E91FA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +371,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B36FF3711EB7477A006E4F05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B372CFB31EAC91A900E91FA9 /* UberLikeSignup */;
+			targetProxy = B36FF3701EB7477A006E4F05 /* PBXContainerItemProxy */;
+		};
+		B36FF37F1EB7478D006E4F05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B372CFB31EAC91A900E91FA9 /* UberLikeSignup */;
+			targetProxy = B36FF37E1EB7478D006E4F05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B372CFBB1EAC91A900E91FA9 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -250,6 +404,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B36FF3721EB7477A006E4F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D4S2X6D6DH;
+				INFOPLIST_FILE = UberLikeSignupTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zeeshan.UberLikeSignupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberLikeSignup.app/UberLikeSignup";
+			};
+			name = Debug;
+		};
+		B36FF3731EB7477A006E4F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = D4S2X6D6DH;
+				INFOPLIST_FILE = UberLikeSignupTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zeeshan.UberLikeSignupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberLikeSignup.app/UberLikeSignup";
+			};
+			name = Release;
+		};
+		B36FF3811EB7478D006E4F05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D4S2X6D6DH;
+				INFOPLIST_FILE = UberLikeSignupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zeeshan.UberLikeSignupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UberLikeSignup;
+			};
+			name = Debug;
+		};
+		B36FF3821EB7478D006E4F05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = D4S2X6D6DH;
+				INFOPLIST_FILE = UberLikeSignupUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zeeshan.UberLikeSignupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = UberLikeSignup;
+			};
+			name = Release;
+		};
 		B372CFC41EAC91A900E91FA9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,6 +594,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B36FF3741EB7477A006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36FF3721EB7477A006E4F05 /* Debug */,
+				B36FF3731EB7477A006E4F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B36FF3801EB7478D006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B36FF3811EB7478D006E4F05 /* Debug */,
+				B36FF3821EB7478D006E4F05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B372CFAF1EAC91A900E91FA9 /* Build configuration list for PBXProject "UberLikeSignup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

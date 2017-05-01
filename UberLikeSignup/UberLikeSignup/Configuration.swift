@@ -54,6 +54,17 @@ enum ViewType {
         }
     }
 
+    var autocorrectionType: UITextAutocorrectionType {
+        switch self {
+        case .name: return .yes
+        case .email: return .yes
+        case .password: return .no
+        case .phone: return .no
+        case .invitationCode: return .no
+        case .verify: return .no
+        }
+    }
+    
     var placeholder: String {
         switch self {
         case .name: return "full name"

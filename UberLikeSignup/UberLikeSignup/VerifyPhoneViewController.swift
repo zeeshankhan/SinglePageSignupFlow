@@ -13,7 +13,7 @@ class VerifyPhoneViewController: EntryBaseViewController {
     override func setupChildViewController(viewController: EntryViewController) {
         viewController.topTitle = "Verify Account"
         
-        let subTitle = "Please enter the verification code we sent to "
+        let subTitle = "Please enter the verification code we sent to\n"
         let attributedString = NSMutableAttributedString(string: subTitle)
         let attributes : [String : Any] = [NSFontAttributeName : UIFont.boldSystemFont(ofSize: 16), NSForegroundColorAttributeName : UIColor.black]
         attributedString.append(NSAttributedString(string: dataModel.phone, attributes: attributes))

@@ -12,8 +12,6 @@ import PhoneNumberKit
 class PhoneViewController: EntryBaseViewController {
 
     override func setupChildViewController(viewController: EntryViewController) {
-        viewController.numberOfPages = dataModel.flowType.totalSteps
-        viewController.currentPage = 0
         viewController.topTitle = "Enter your mobile number"
         viewController.topSubTitle = "Will be used to confirm your account"
         

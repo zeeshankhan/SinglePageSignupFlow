@@ -15,13 +15,8 @@ class EntryViewController: UIViewController {
     var topSubTitle = ""
     var topAttributedSubTitle: NSAttributedString?
 
-    var numberOfPages = 1
-    var currentPage = 0
-    
     @IBOutlet weak fileprivate var lblTitle: UILabel!
     @IBOutlet weak fileprivate var lblSubTitle: UILabel!
-    
-    @IBOutlet weak fileprivate var pageControl: UIPageControl!
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak fileprivate var separator: UIView!       // Bottom separator view
@@ -48,15 +43,20 @@ class EntryViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         textField.becomeFirstResponder()
+        textField.autocorrectionType = viewType.autocorrectionType
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//    }
+//    
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//    }
     
     //MARK: Private functions
     func setupView() {
 
-        pageControl.numberOfPages = numberOfPages
-        pageControl.currentPage = currentPage
-        pageControl.hidesForSinglePage = true
-        
         lblTitle.text = topTitle
         
         if let topAttributedSubTitle = topAttributedSubTitle {

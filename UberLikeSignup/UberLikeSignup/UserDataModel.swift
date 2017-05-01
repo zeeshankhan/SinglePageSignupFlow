@@ -12,13 +12,6 @@ struct UserDataModel {
     
     enum FlowType {
         case signUp, signIn, forgotPassword, facebook
-        
-        var totalSteps: Int {
-            switch self {
-            case .signUp: return 0
-            default: return 0
-            }
-        }
     }
     
     var flowType: FlowType = .signUp

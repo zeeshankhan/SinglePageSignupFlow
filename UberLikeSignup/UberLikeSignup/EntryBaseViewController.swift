@@ -34,11 +34,8 @@ class EntryBaseViewController: UIViewController {
         
         guard let info: [AnyHashable:Any] = notification.userInfo,
             let keyboardSize: CGSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size else { return }
-        
-        UIView.animate(withDuration: 0.2) {
-            self.btnBottomMargin.constant = keyboardSize.height
-            self.view.layoutIfNeeded()
-        }
+
+        self.btnBottomMargin.constant = keyboardSize.height
     }
 
     func changeButtonState(enable: Bool) {
