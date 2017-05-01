@@ -39,8 +39,8 @@ class PasswordViewController: EntryBaseViewController  {
         }
         
         viewController.viewType = .password("")
-        viewController.textDidChange = { [weak self] viewType in
-            self?.changeButtonState(enable: viewType.isValid())
+        viewController.textDidChange = { [weak self] isValid in
+            self?.changeButtonState(enable: isValid)
         }
     }
     

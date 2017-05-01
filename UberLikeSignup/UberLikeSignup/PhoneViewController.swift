@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PhoneNumberKit
 
 class PhoneViewController: EntryBaseViewController {
 
@@ -15,10 +16,10 @@ class PhoneViewController: EntryBaseViewController {
         viewController.currentPage = 0
         viewController.topTitle = "Enter your mobile number"
         viewController.topSubTitle = "Will be used to confirm your account"
-        viewController.viewType = .phone(imageCode: "AE", code: "971", number: "")
-        viewController.didEndEditing = nil
-        viewController.textDidChange = { [weak self] viewType in
-            self?.changeButtonState(enable: viewType.isValid())
+        
+        viewController.viewType = FieldValidation.currentLocationPhoneFormat()
+        viewController.textDidChange = { [weak self] isValid in
+            self?.changeButtonState(enable: isValid)
         }
     }
 
@@ -31,18 +32,18 @@ class PhoneViewController: EntryBaseViewController {
         
         let viewType = editController.viewType
         var phone = ""
-        if case .phone(_, let code, let number) = viewType {
-            phone = code + number
+        if case .phone(let region, _, let number) = viewType {
+            phone = FieldValidation.validPhoneWithCode(region: region, number: number)
         }
         
-        guard phone.characters.count == 12 else {
-            editController.modifyCellErrorState(isError: true)
-            return
-        }
+//        guard phone.characters.count == 12 else {
+//            editController.modifyCellErrorState(isError: true)
+//            return
+//        }
         
         var vc: EntryBaseViewController
         
-        if phone != "971526097571" {
+        if phone != "+971 52 609 7571" {
             dataModel.flowType = .signUp
             dataModel.phone = phone
             

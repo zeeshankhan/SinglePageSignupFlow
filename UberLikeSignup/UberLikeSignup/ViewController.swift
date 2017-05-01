@@ -10,13 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var phoneContainerView: UIView!
-
+    @IBOutlet weak var phoneContainerView: UIView! {
+        didSet {
+            phoneContainerView.layer.cornerRadius =  4.0
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "POC"
-        phoneContainerView.layer.cornerRadius =  4.0
     }
     
     @IBAction func presentNewSignUp() {

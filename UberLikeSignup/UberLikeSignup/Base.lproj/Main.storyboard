@@ -169,7 +169,7 @@ promotions and special offers.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqS-WN-LlY" userLabel="Code">
-                                <rect key="frame" x="30" y="121.5" width="110" height="40"/>
+                                <rect key="frame" x="20" y="121.5" width="106" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="AE" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-2R-Rto">
                                         <rect key="frame" x="0.0" y="6" width="36" height="27"/>
@@ -184,14 +184,14 @@ promotions and special offers.</string>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+971" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-Oh-IWU">
-                                        <rect key="frame" x="60" y="6.5" width="50.5" height="26.5"/>
+                                        <rect key="frame" x="60" y="8" width="46.5" height="24"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMD-bM-t8Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="40"/>
                                         <connections>
                                             <action selector="phoneCodeAction" destination="AzR-yG-UE9" eventType="touchUpInside" id="wFu-CF-7eI"/>
                                         </connections>
@@ -214,28 +214,28 @@ promotions and special offers.</string>
                                     <constraint firstItem="KyL-hW-mrm" firstAttribute="leading" secondItem="Yqf-2R-Rto" secondAttribute="trailing" id="wvd-QI-hYv"/>
                                 </constraints>
                             </view>
-                            <textField clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="050 123 4567" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-2e-qcO">
-                                <rect key="frame" x="148" y="121.5" width="197" height="40"/>
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="050 123 4567" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-2e-qcO">
+                                <rect key="frame" x="134" y="121.5" width="221" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="AZ3-y2-ndB"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" spellCheckingType="no" keyboardType="phonePad"/>
                                 <connections>
                                     <outlet property="delegate" destination="AzR-yG-UE9" id="T62-sU-fe8"/>
                                 </connections>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8I-jh-5O6" userLabel="Separator">
-                                <rect key="frame" x="30" y="169.5" width="307" height="2"/>
+                                <rect key="frame" x="20" y="169.5" width="327" height="2"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="uQr-qg-v1S"/>
                                 </constraints>
                             </view>
                             <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill in your name." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3R-hh-RcT">
-                                <rect key="frame" x="30" y="179.5" width="179.5" height="20.5"/>
+                                <rect key="frame" x="20" y="179.5" width="179.5" height="20.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.8666666666666667" green="0.24313725490196078" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -246,18 +246,18 @@ promotions and special offers.</string>
                         <constraints>
                             <constraint firstItem="tbu-2e-qcO" firstAttribute="top" secondItem="fjH-xf-EAT" secondAttribute="bottom" constant="30" id="5sB-UM-Idg"/>
                             <constraint firstItem="N3R-hh-RcT" firstAttribute="leading" secondItem="V8I-jh-5O6" secondAttribute="leading" id="6xr-L3-FdO"/>
-                            <constraint firstItem="V8I-jh-5O6" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="30" id="749-ej-Oe3"/>
+                            <constraint firstItem="V8I-jh-5O6" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="749-ej-Oe3"/>
                             <constraint firstItem="nAL-mi-27L" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="9lm-PH-icw"/>
                             <constraint firstItem="N3R-hh-RcT" firstAttribute="top" secondItem="V8I-jh-5O6" secondAttribute="bottom" constant="8" id="H3F-Rw-y1d"/>
                             <constraint firstAttribute="trailing" secondItem="nAL-mi-27L" secondAttribute="trailing" constant="20" id="HTb-ky-SzK"/>
-                            <constraint firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="30" id="NK9-yd-82g"/>
+                            <constraint firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="20" id="NK9-yd-82g"/>
                             <constraint firstAttribute="trailing" secondItem="KFJ-jV-bOx" secondAttribute="trailing" constant="20" id="SlJ-XF-4p0"/>
                             <constraint firstItem="fjH-xf-EAT" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="T2y-VH-v4q"/>
                             <constraint firstItem="nAL-mi-27L" firstAttribute="centerX" secondItem="ojA-pU-gLg" secondAttribute="centerX" id="WLm-JR-4gF"/>
                             <constraint firstItem="tbu-2e-qcO" firstAttribute="centerY" secondItem="DqS-WN-LlY" secondAttribute="centerY" id="cvL-IJ-Dt4"/>
                             <constraint firstItem="V8I-jh-5O6" firstAttribute="top" secondItem="tbu-2e-qcO" secondAttribute="bottom" constant="8" id="fxP-wG-t50"/>
                             <constraint firstItem="nAL-mi-27L" firstAttribute="top" secondItem="ojA-pU-gLg" secondAttribute="top" constant="-12" id="gWy-A2-gvq"/>
-                            <constraint firstItem="DqS-WN-LlY" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="30" id="hio-sx-UCG"/>
+                            <constraint firstItem="DqS-WN-LlY" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="hio-sx-UCG"/>
                             <constraint firstItem="V8I-jh-5O6" firstAttribute="trailing" secondItem="tbu-2e-qcO" secondAttribute="trailing" constant="-8" id="jZG-Gy-Ms8"/>
                             <constraint firstItem="fjH-xf-EAT" firstAttribute="top" secondItem="KFJ-jV-bOx" secondAttribute="bottom" constant="8" id="nsN-94-JcR"/>
                             <constraint firstItem="KFJ-jV-bOx" firstAttribute="leading" secondItem="ojA-pU-gLg" secondAttribute="leading" constant="20" id="qc6-Sc-jae"/>
@@ -815,12 +815,12 @@ promotions and special offers.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-eI-Ej7">
-                                <rect key="frame" x="299" y="20" width="56" height="48"/>
+                                <rect key="frame" x="298" y="20" width="57" height="48"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ioM-fY-LyC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelAction" destination="zd7-ry-bFo" eventType="touchUpInside" id="pgt-IY-RCR"/>

@@ -14,8 +14,8 @@ class NameViewController: EntryBaseViewController {
         viewController.topTitle = "Enter your full name"
         viewController.topSubTitle = "To know what to call you and help your captain communicate with you"
         viewController.viewType = .name("")
-        viewController.textDidChange = { [weak self] viewType in
-            self?.changeButtonState(enable: viewType.isValid())
+        viewController.textDidChange = { [weak self] isValid in
+            self?.changeButtonState(enable: isValid)
         }
     }
     

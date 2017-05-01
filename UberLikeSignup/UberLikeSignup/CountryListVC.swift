@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import PhoneNumberKit
+
+let kCurrentLocationKey = "#"
 
 class CountryListVC: UIViewController {
 
@@ -42,6 +45,9 @@ class CountryListVC: UIViewController {
 
                 countryList = sorted
 
+                var currentLocationCountry: [String: String]? = nil
+                let region = PhoneNumberKit.defaultRegionCode()
+                
                 var dict: [String : [[String : String]]] = [:]
                 for country in sorted {
                     let key = String(describing: country["name"]!.characters.first!)
@@ -51,8 +57,20 @@ class CountryListVC: UIViewController {
                     }
                     arrKV?.append(country)
                     dict[key] = arrKV
+                    
+                    if currentLocationCountry == nil {
+                        let code = country["code"]!
+                        if code == region {
+                            currentLocationCountry = country
+                        }
+                    }
                 }
 
+                // Add current location
+                if let currentLocationCountry = currentLocationCountry {
+                    dict[kCurrentLocationKey] = [currentLocationCountry]
+                }
+                
                 sections = dict
                 sectionsTitles = dict.keys.sorted().flatMap { $0 }
             }
@@ -71,11 +89,18 @@ extension CountryListVC : UITableViewDataSource, UITableViewDelegate {
     }
 
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return filteredList.count > 0 ? nil : sectionsTitles as [String]
+        if filteredList.count > 0 {
+            return nil
+        }
+        else {
+            var indexTitles = sectionsTitles
+            indexTitles[0] = ""
+            return indexTitles
+        }
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return filteredList.count > 0 ? "Countries" : sectionsTitles[section]
+        return filteredList.count > 0 ? "" : section == 0 ? "Current Location" : sectionsTitles[section]
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,7 +126,7 @@ extension CountryListVC : UITableViewDataSource, UITableViewDelegate {
         cell.icon.image = UIImage(named: (country[kCountryFlag]!))
         cell.icon.layer.cornerRadius = 1.5
         cell.icon.layer.masksToBounds = true
-        cell.name.text = (country[kCountryFlag]!) + "-" + (country["name"]!)
+        cell.name.text = (country["name"]!) // (country[kCountryFlag]!) + "-" +
         cell.code.text = "+" + (country[kPhoneCode]!)
         return cell
     }

@@ -6,6 +6,12 @@
 build/
 DerivedData/
 
+## Xcode - Carthage
+UberLikeSignup/Carthage/Build/Mac
+UberLikeSignup/Carthage/Build/tvOS
+UberLikeSignup/Carthage/Build/watchOS
+UberLikeSignup/Carthage/Checkouts
+
 ## Various settings
 *.pbxuser
 !default.pbxuser

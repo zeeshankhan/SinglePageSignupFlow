@@ -59,7 +59,7 @@ enum ViewType {
         case .name: return "full name"
         case .email: return "name@example.com"
         case .password: return "password"
-        case .phone: return "50 123 4567"
+        case .phone: return "12 345 6789"
         case .invitationCode: return "Invitation Code (Optional)"
         case .verify: return "1234"
         }
@@ -96,10 +96,10 @@ enum ViewType {
     
     func isValidText(_ text: String) -> Bool {
         switch self {
-        case .name: return text.isValidName()
-        case .email: return text.isValidEmail()
+        case .name: return FieldValidation.isValidName(text)
+        case .email: return FieldValidation.isValidEmail(text)
         case .password: return text.characters.count > 5
-        case .phone: return text.characters.count > 8 //text.isValidPhone()
+        case .phone(let region, _, _): return FieldValidation.isValidPhone(text, forRegion: region)
         case .invitationCode: return true //text.characters.count > 5
         case .verify: return text.characters.count == 4
         }

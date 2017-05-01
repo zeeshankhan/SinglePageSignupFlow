@@ -23,9 +23,10 @@
 		B372CFDC1EAC91F800E91FA9 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFD01EAC91F800E91FA9 /* PasswordViewController.swift */; };
 		B372CFDD1EAC91F800E91FA9 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFD11EAC91F800E91FA9 /* PhoneViewController.swift */; };
 		B372CFDE1EAC91F800E91FA9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFD21EAC91F800E91FA9 /* Configuration.swift */; };
-		B372CFDF1EAC91F800E91FA9 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFD31EAC91F800E91FA9 /* String+Validation.swift */; };
 		B372CFE01EAC91F800E91FA9 /* VerifyPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFD41EAC91F800E91FA9 /* VerifyPhoneViewController.swift */; };
 		B372CFE21EAC98F500E91FA9 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B372CFE11EAC98F500E91FA9 /* CustomNavigationController.swift */; };
+		B3AAC96F1EB6190300F4C882 /* FieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AAC96E1EB6190300F4C882 /* FieldValidation.swift */; };
+		B3D62CAE1EB451300058E1B3 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D62CAD1EB451300058E1B3 /* PhoneNumberKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +48,10 @@
 		B372CFD01EAC91F800E91FA9 /* PasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		B372CFD11EAC91F800E91FA9 /* PhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		B372CFD21EAC91F800E91FA9 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		B372CFD31EAC91F800E91FA9 /* String+Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		B372CFD41EAC91F800E91FA9 /* VerifyPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyPhoneViewController.swift; sourceTree = "<group>"; };
 		B372CFE11EAC98F500E91FA9 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		B3AAC96E1EB6190300F4C882 /* FieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldValidation.swift; sourceTree = "<group>"; };
+		B3D62CAD1EB451300058E1B3 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneNumberKit.framework; path = Carthage/Build/iOS/PhoneNumberKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D62CAE1EB451300058E1B3 /* PhoneNumberKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 			children = (
 				B372CFB61EAC91A900E91FA9 /* UberLikeSignup */,
 				B372CFB51EAC91A900E91FA9 /* Products */,
+				B3D62CAC1EB451300058E1B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +99,7 @@
 				B34B35F51EAD975C0012E404 /* UserDataModel.swift */,
 				B372CFD21EAC91F800E91FA9 /* Configuration.swift */,
 				B372CFE11EAC98F500E91FA9 /* CustomNavigationController.swift */,
-				B372CFD31EAC91F800E91FA9 /* String+Validation.swift */,
+				B3AAC96E1EB6190300F4C882 /* FieldValidation.swift */,
 				B372CFBB1EAC91A900E91FA9 /* Main.storyboard */,
 				B372CFC91EAC91F800E91FA9 /* CountryList.plist */,
 				B372CFCE1EAC91F800E91FA9 /* Flags.xcassets */,
@@ -104,6 +108,14 @@
 				B372CFC31EAC91A900E91FA9 /* Info.plist */,
 			);
 			path = UberLikeSignup;
+			sourceTree = "<group>";
+		};
+		B3D62CAC1EB451300058E1B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3D62CAD1EB451300058E1B3 /* PhoneNumberKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +128,7 @@
 				B372CFB01EAC91A900E91FA9 /* Sources */,
 				B372CFB11EAC91A900E91FA9 /* Frameworks */,
 				B372CFB21EAC91A900E91FA9 /* Resources */,
+				B3D62CAF1EB453130058E1B3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -176,6 +189,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3D62CAF1EB453130058E1B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PhoneNumberKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B372CFB01EAC91A900E91FA9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,7 +215,6 @@
 				B372CFDD1EAC91F800E91FA9 /* PhoneViewController.swift in Sources */,
 				B34B35F61EAD975C0012E404 /* UserDataModel.swift in Sources */,
 				B372CFBA1EAC91A900E91FA9 /* ViewController.swift in Sources */,
-				B372CFDF1EAC91F800E91FA9 /* String+Validation.swift in Sources */,
 				B372CFE01EAC91F800E91FA9 /* VerifyPhoneViewController.swift in Sources */,
 				B372CFDC1EAC91F800E91FA9 /* PasswordViewController.swift in Sources */,
 				B372CFD61EAC91F800E91FA9 /* CountryListVC.swift in Sources */,
@@ -195,6 +224,7 @@
 				B372CFD81EAC91F800E91FA9 /* EntryBaseViewController.swift in Sources */,
 				B372CFD91EAC91F800E91FA9 /* EntryViewController.swift in Sources */,
 				B372CFE21EAC98F500E91FA9 /* CustomNavigationController.swift in Sources */,
+				B3AAC96F1EB6190300F4C882 /* FieldValidation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +349,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D4S2X6D6DH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UberLikeSignup/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -335,6 +369,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = D4S2X6D6DH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = UberLikeSignup/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

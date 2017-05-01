@@ -8,13 +8,12 @@
 
 import UIKit
 
-typealias EntryViewCallback = ((_ item: ViewType) -> Void)
-
 class EntryViewController: UIViewController {
 
     var viewType = ViewType.name("")
     var topTitle = ""
     var topSubTitle = ""
+    var topAttributedSubTitle: NSAttributedString?
 
     var numberOfPages = 1
     var currentPage = 0
@@ -33,10 +32,9 @@ class EntryViewController: UIViewController {
     @IBOutlet weak fileprivate var imgCountry: UIImageView!
     @IBOutlet weak fileprivate var lblCode: UILabel!
     
-    
     var isModified = false
-    var textDidChange: EntryViewCallback?
-    var didEndEditing: EntryViewCallback?
+    var textDidChange: ((_ isValidEntry: Bool) -> Void)?
+    var didEndEditing: ((_ item: ViewType) -> Void)?
     var didBeginEditing: ((_ textField: UITextField) -> Void)?
 
     //MARK: View lifecycle
@@ -60,7 +58,13 @@ class EntryViewController: UIViewController {
         pageControl.hidesForSinglePage = true
         
         lblTitle.text = topTitle
-        lblSubTitle.text = topSubTitle
+        
+        if let topAttributedSubTitle = topAttributedSubTitle {
+            lblSubTitle.attributedText = topAttributedSubTitle
+        }
+        else {
+            lblSubTitle.text = topSubTitle
+        }
 
         separator.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         lblWarning.text = ""
@@ -79,7 +83,7 @@ class EntryViewController: UIViewController {
                                                       toItem: view,
                                                       attribute: NSLayoutAttribute.leading,
                                                       multiplier: 1,
-                                                      constant: 30)
+                                                      constant: 20)
             view.addConstraint(constraintButton)
             view.layoutIfNeeded()
         }
@@ -110,6 +114,13 @@ class EntryViewController: UIViewController {
             self?.viewType = ViewType.phone(imageCode: code[kCountryFlag]!, code: code[kPhoneCode]!, number: (self?.viewType.value)!)
             self?.imgCountry.image = UIImage(named: code[kCountryFlag]!)
             self?.lblCode.text = "+" + code[kPhoneCode]!
+            
+            let text = FieldValidation.validPhone(region: code[kCountryFlag]!, number: (self?.viewType.value)!)
+            let isValid = FieldValidation.isValidPhone(text, forRegion: code[kCountryFlag]!)
+            if let callback = self?.textDidChange {
+                callback(isValid)
+            }
+
         }
         let navCont = UINavigationController(rootViewController: vc)
         present(navCont, animated: true, completion: nil)
@@ -129,25 +140,50 @@ extension EntryViewController : UITextFieldDelegate {
         textField.becomeFirstResponder()
         
         if let callback = textDidChange {
-            callback(self.viewType)
+            callback(self.viewType.isValid())
         }
     }
-
+    
     // Called from addTarget selector on UIControlEvents.editingChanged
     func textFieldDidChange(_ textField: UITextField) {
+        
+        var text = textField.text!
+        
+        if case .phone(let regionCode, _, _) = viewType {
+            textField.text = FieldValidation.formattedPhone(region: regionCode, number: text)
+            text = FieldValidation.validPhone(region: regionCode, number: text)
+        }
+        
         isModified = viewType.shouldValidate
         modifyCellErrorState(isError: false)
+
+        let isValid = viewType.isValidText(text)
+
+        if isValid {
+            viewType = viewType.new(text)
+        }
+        
         if let callback = textDidChange {
-            viewType = viewType.new(textField.text!)
-            callback(self.viewType)
+            callback(isValid)
         }
     }
 
     //MARK: UITextField delegates
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    
+        if case .phone = viewType {
+            if string.characters.count == 1 && string == "+" {
+                return false
+            }
+        }
+        return true
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         separator.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        viewType = viewType.new(textField.text!)
         if let callback = didEndEditing {
-            viewType = viewType.new(textField.text!)
             callback(viewType)
         }
     }
