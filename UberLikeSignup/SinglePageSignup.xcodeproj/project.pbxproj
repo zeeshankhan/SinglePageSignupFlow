@@ -50,13 +50,13 @@
 
 /* Begin PBXFileReference section */
 		B34B35F51EAD975C0012E404 /* UserDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
-		B36FF36B1EB7477A006E4F05 /* UberLikeSignupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberLikeSignupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36FF36B1EB7477A006E4F05 /* SinglePageSignupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinglePageSignupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36FF36D1EB7477A006E4F05 /* UberLikeSignupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLikeSignupTests.swift; sourceTree = "<group>"; };
 		B36FF36F1EB7477A006E4F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B36FF3791EB7478D006E4F05 /* UberLikeSignupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UberLikeSignupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B36FF3791EB7478D006E4F05 /* SinglePageSignupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinglePageSignupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36FF37B1EB7478D006E4F05 /* UberLikeSignupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberLikeSignupUITests.swift; sourceTree = "<group>"; };
 		B36FF37D1EB7478D006E4F05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B372CFB41EAC91A900E91FA9 /* UberLikeSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UberLikeSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B372CFB41EAC91A900E91FA9 /* SinglePageSignup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinglePageSignup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B372CFB71EAC91A900E91FA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B372CFB91EAC91A900E91FA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B372CFBC1EAC91A900E91FA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -105,30 +105,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B36FF36C1EB7477A006E4F05 /* UberLikeSignupTests */ = {
+		B36FF36C1EB7477A006E4F05 /* SinglePageSignupTests */ = {
 			isa = PBXGroup;
 			children = (
 				B36FF36D1EB7477A006E4F05 /* UberLikeSignupTests.swift */,
 				B36FF36F1EB7477A006E4F05 /* Info.plist */,
 			);
+			name = SinglePageSignupTests;
 			path = UberLikeSignupTests;
 			sourceTree = "<group>";
 		};
-		B36FF37A1EB7478D006E4F05 /* UberLikeSignupUITests */ = {
+		B36FF37A1EB7478D006E4F05 /* SinglePageSignupUITests */ = {
 			isa = PBXGroup;
 			children = (
 				B36FF37B1EB7478D006E4F05 /* UberLikeSignupUITests.swift */,
 				B36FF37D1EB7478D006E4F05 /* Info.plist */,
 			);
+			name = SinglePageSignupUITests;
 			path = UberLikeSignupUITests;
 			sourceTree = "<group>";
 		};
 		B372CFAB1EAC91A900E91FA9 = {
 			isa = PBXGroup;
 			children = (
-				B372CFB61EAC91A900E91FA9 /* UberLikeSignup */,
-				B36FF36C1EB7477A006E4F05 /* UberLikeSignupTests */,
-				B36FF37A1EB7478D006E4F05 /* UberLikeSignupUITests */,
+				B372CFB61EAC91A900E91FA9 /* SinglePageSignup */,
+				B36FF36C1EB7477A006E4F05 /* SinglePageSignupTests */,
+				B36FF37A1EB7478D006E4F05 /* SinglePageSignupUITests */,
 				B372CFB51EAC91A900E91FA9 /* Products */,
 				B3D62CAC1EB451300058E1B3 /* Frameworks */,
 			);
@@ -137,14 +139,14 @@
 		B372CFB51EAC91A900E91FA9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B372CFB41EAC91A900E91FA9 /* UberLikeSignup.app */,
-				B36FF36B1EB7477A006E4F05 /* UberLikeSignupTests.xctest */,
-				B36FF3791EB7478D006E4F05 /* UberLikeSignupUITests.xctest */,
+				B372CFB41EAC91A900E91FA9 /* SinglePageSignup.app */,
+				B36FF36B1EB7477A006E4F05 /* SinglePageSignupTests.xctest */,
+				B36FF3791EB7478D006E4F05 /* SinglePageSignupUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B372CFB61EAC91A900E91FA9 /* UberLikeSignup */ = {
+		B372CFB61EAC91A900E91FA9 /* SinglePageSignup */ = {
 			isa = PBXGroup;
 			children = (
 				B372CFB71EAC91A900E91FA9 /* AppDelegate.swift */,
@@ -168,6 +170,7 @@
 				B372CFC01EAC91A900E91FA9 /* LaunchScreen.storyboard */,
 				B372CFC31EAC91A900E91FA9 /* Info.plist */,
 			);
+			name = SinglePageSignup;
 			path = UberLikeSignup;
 			sourceTree = "<group>";
 		};
@@ -182,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B36FF36A1EB7477A006E4F05 /* UberLikeSignupTests */ = {
+		B36FF36A1EB7477A006E4F05 /* SinglePageSignupTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B36FF3741EB7477A006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupTests" */;
+			buildConfigurationList = B36FF3741EB7477A006E4F05 /* Build configuration list for PBXNativeTarget "SinglePageSignupTests" */;
 			buildPhases = (
 				B36FF3671EB7477A006E4F05 /* Sources */,
 				B36FF3681EB7477A006E4F05 /* Frameworks */,
@@ -195,14 +198,14 @@
 			dependencies = (
 				B36FF3711EB7477A006E4F05 /* PBXTargetDependency */,
 			);
-			name = UberLikeSignupTests;
+			name = SinglePageSignupTests;
 			productName = UberLikeSignupTests;
-			productReference = B36FF36B1EB7477A006E4F05 /* UberLikeSignupTests.xctest */;
+			productReference = B36FF36B1EB7477A006E4F05 /* SinglePageSignupTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B36FF3781EB7478D006E4F05 /* UberLikeSignupUITests */ = {
+		B36FF3781EB7478D006E4F05 /* SinglePageSignupUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B36FF3801EB7478D006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupUITests" */;
+			buildConfigurationList = B36FF3801EB7478D006E4F05 /* Build configuration list for PBXNativeTarget "SinglePageSignupUITests" */;
 			buildPhases = (
 				B36FF3751EB7478D006E4F05 /* Sources */,
 				B36FF3761EB7478D006E4F05 /* Frameworks */,
@@ -213,14 +216,14 @@
 			dependencies = (
 				B36FF37F1EB7478D006E4F05 /* PBXTargetDependency */,
 			);
-			name = UberLikeSignupUITests;
+			name = SinglePageSignupUITests;
 			productName = UberLikeSignupUITests;
-			productReference = B36FF3791EB7478D006E4F05 /* UberLikeSignupUITests.xctest */;
+			productReference = B36FF3791EB7478D006E4F05 /* SinglePageSignupUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		B372CFB31EAC91A900E91FA9 /* UberLikeSignup */ = {
+		B372CFB31EAC91A900E91FA9 /* SinglePageSignup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B372CFC61EAC91A900E91FA9 /* Build configuration list for PBXNativeTarget "UberLikeSignup" */;
+			buildConfigurationList = B372CFC61EAC91A900E91FA9 /* Build configuration list for PBXNativeTarget "SinglePageSignup" */;
 			buildPhases = (
 				B372CFB01EAC91A900E91FA9 /* Sources */,
 				B372CFB11EAC91A900E91FA9 /* Frameworks */,
@@ -231,9 +234,9 @@
 			);
 			dependencies = (
 			);
-			name = UberLikeSignup;
+			name = SinglePageSignup;
 			productName = UberLikeSignup;
-			productReference = B372CFB41EAC91A900E91FA9 /* UberLikeSignup.app */;
+			productReference = B372CFB41EAC91A900E91FA9 /* SinglePageSignup.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -265,7 +268,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B372CFAF1EAC91A900E91FA9 /* Build configuration list for PBXProject "UberLikeSignup" */;
+			buildConfigurationList = B372CFAF1EAC91A900E91FA9 /* Build configuration list for PBXProject "SinglePageSignup" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -278,9 +281,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B372CFB31EAC91A900E91FA9 /* UberLikeSignup */,
-				B36FF36A1EB7477A006E4F05 /* UberLikeSignupTests */,
-				B36FF3781EB7478D006E4F05 /* UberLikeSignupUITests */,
+				B372CFB31EAC91A900E91FA9 /* SinglePageSignup */,
+				B36FF36A1EB7477A006E4F05 /* SinglePageSignupTests */,
+				B36FF3781EB7478D006E4F05 /* SinglePageSignupUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,12 +377,12 @@
 /* Begin PBXTargetDependency section */
 		B36FF3711EB7477A006E4F05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B372CFB31EAC91A900E91FA9 /* UberLikeSignup */;
+			target = B372CFB31EAC91A900E91FA9 /* SinglePageSignup */;
 			targetProxy = B36FF3701EB7477A006E4F05 /* PBXContainerItemProxy */;
 		};
 		B36FF37F1EB7478D006E4F05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B372CFB31EAC91A900E91FA9 /* UberLikeSignup */;
+			target = B372CFB31EAC91A900E91FA9 /* SinglePageSignup */;
 			targetProxy = B36FF37E1EB7478D006E4F05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -414,7 +417,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zeeshan.UberLikeSignupTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberLikeSignup.app/UberLikeSignup";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinglePageSignup.app/SinglePageSignup";
 			};
 			name = Debug;
 		};
@@ -428,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = zeeshan.UberLikeSignupTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UberLikeSignup.app/UberLikeSignup";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinglePageSignup.app/SinglePageSignup";
 			};
 			name = Release;
 		};
@@ -594,23 +597,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B36FF3741EB7477A006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupTests" */ = {
+		B36FF3741EB7477A006E4F05 /* Build configuration list for PBXNativeTarget "SinglePageSignupTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B36FF3721EB7477A006E4F05 /* Debug */,
 				B36FF3731EB7477A006E4F05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B36FF3801EB7478D006E4F05 /* Build configuration list for PBXNativeTarget "UberLikeSignupUITests" */ = {
+		B36FF3801EB7478D006E4F05 /* Build configuration list for PBXNativeTarget "SinglePageSignupUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B36FF3811EB7478D006E4F05 /* Debug */,
 				B36FF3821EB7478D006E4F05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B372CFAF1EAC91A900E91FA9 /* Build configuration list for PBXProject "UberLikeSignup" */ = {
+		B372CFAF1EAC91A900E91FA9 /* Build configuration list for PBXProject "SinglePageSignup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B372CFC41EAC91A900E91FA9 /* Debug */,
@@ -619,7 +624,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B372CFC61EAC91A900E91FA9 /* Build configuration list for PBXNativeTarget "UberLikeSignup" */ = {
+		B372CFC61EAC91A900E91FA9 /* Build configuration list for PBXNativeTarget "SinglePageSignup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B372CFC71EAC91A900E91FA9 /* Debug */,
