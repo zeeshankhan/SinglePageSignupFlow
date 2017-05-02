@@ -1,2 +1,2 @@
-# UberLikeSignup
-Uber like sign up / sign in flow
+# SinglePageSignup
+Single page sign up / sign in flow
